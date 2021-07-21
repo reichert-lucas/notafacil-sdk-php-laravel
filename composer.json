@@ -1,0 +1,58 @@
+{
+    "name": "jetimob/notafacil-sdk-php-laravel",
+    "description": "",
+    "keywords": ["laravel", "sdk", "nota facil", "NFSe", "nota fiscal"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jetimob\\NotaFacil\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jetimob\\NotaFacil\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alan Weingartner",
+            "email": "hi@alanwgt.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Jetimob",
+            "email": "contato@jetimob.com",
+            "homepage": "https://jetimob.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "jetimob/http-php-laravel": "^v1.3.2",
+        "illuminate/support": "^6.0 || ^7.0 || ^8.0",
+        "illuminate/console": "^6.0 || ^7.0 || ^8.0",
+        "illuminate/container": "^6.0 || ^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.19",
+        "phpunit/phpunit": "^9.5"
+    },
+    "support": {
+        "issues": "https://github.com/jetimob/notafacil-sdk-php-laravel/issues"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jetimob\\NotaFacil\\NotaFacilServiceProvider"
+            ],
+            "aliases": {
+                "NotaFacil": "Jetimob\\NotaFacil\\Facades\\NotaFacil"
+            }
+        }
+    }
+}
