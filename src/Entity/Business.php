@@ -15,18 +15,18 @@ class Business
     protected Certificate $certificado_ativo;
     protected string $nome_razao_social;
     protected string $nome_fantasia;
-    protected string $tipo_conta;
+    protected ?string $tipo_conta;
     protected string $cnpj_cpf;
-    protected string $matriz_filial;
-    protected string $insc_estadual;
-    protected string $insc_municipal;
-    protected string $cnae_primario;
+    protected ?string $matriz_filial;
+    protected ?string $insc_estadual;
+    protected ?string $insc_municipal;
+    protected ?string $cnae_primario;
     protected string $email;
-    protected string $responsavel;
-    protected string $responsavel_telefone;
-    protected string $observacoes;
-    protected string $tipo_empresa;
-    protected string $host;
+    protected ?string $responsavel;
+    protected ?string $responsavel_telefone;
+    protected ?string $observacoes;
+    protected ?string $tipo_empresa;
+    protected ?string $host;
     protected ?string $url_retorno = null;
     protected string $status;
     protected string $consumer_id;
@@ -88,9 +88,9 @@ class Business
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getTipoConta(): string
+    public function getTipoConta(): ?string
     {
         return $this->tipo_conta;
     }
@@ -104,33 +104,33 @@ class Business
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getMatrizFilial(): string
+    public function getMatrizFilial(): ?string
     {
         return $this->matriz_filial;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getInscEstadual(): string
+    public function getInscEstadual(): ?string
     {
         return $this->insc_estadual;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getInscMunicipal(): string
+    public function getInscMunicipal(): ?string
     {
         return $this->insc_municipal;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getCnaePrimario(): string
+    public function getCnaePrimario(): ?string
     {
         return $this->cnae_primario;
     }
@@ -144,41 +144,41 @@ class Business
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getResponsavel(): string
+    public function getResponsavel(): ?string
     {
         return $this->responsavel;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getResponsavelTelefone(): string
+    public function getResponsavelTelefone(): ?string
     {
         return $this->responsavel_telefone;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getObservacoes(): string
+    public function getObservacoes(): ?string
     {
         return $this->observacoes;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getTipoEmpresa(): string
+    public function getTipoEmpresa(): ?string
     {
         return $this->tipo_empresa;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getHost(): string
+    public function getHost(): ?string
     {
         return $this->host;
     }

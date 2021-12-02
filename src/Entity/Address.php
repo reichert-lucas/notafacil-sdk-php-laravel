@@ -12,7 +12,7 @@ class Address
     protected string $logradouro;
     protected string $bairro;
     protected string $numero;
-    protected string $complemento;
+    protected ?string $complemento;
     protected string $cep;
     protected City $city;
 
@@ -49,9 +49,9 @@ class Address
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getComplemento(): string
+    public function getComplemento(): ?string
     {
         return $this->complemento;
     }
