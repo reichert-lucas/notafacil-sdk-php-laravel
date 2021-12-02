@@ -179,7 +179,7 @@ return [
         | PRECISA implementar \Jetimob\Http\Authorization\OAuth\ClientProviders\OAuthClientResolverInterface
         */
 
-        'oauth_client_resolver' => \Jetimob\Http\Authorization\OAuth\ClientProviders\OAuthClientResolver::class,
+        'oauth_client_resolver' => \Jetimob\NotaFacil\Http\OAuthClientResolver::class,
 
         'oauth_access_token_resolver' => [
             \Jetimob\Http\Authorization\OAuth\OAuthFlow::CLIENT_CREDENTIALS =>

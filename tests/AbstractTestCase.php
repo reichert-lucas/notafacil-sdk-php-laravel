@@ -12,7 +12,7 @@ class AbstractTestCase extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-//        $this->assertSame('sandbox', env('NOTAFACIL_ENVIRONMENT', 'sandbox'), );
+        $this->assertSame('sandbox', env('NOTAFACIL_ENVIRONMENT', 'sandbox'));
         NotaFacil::getHttpInstance()->overwriteConfig(
             'oauth_access_token_repository',
             \Jetimob\Http\Authorization\OAuth\Storage\FileCacheRepository::class,
