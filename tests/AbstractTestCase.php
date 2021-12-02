@@ -2,7 +2,6 @@
 
 namespace Jetimob\NotaFacil\Tests;
 
-use Illuminate\Support\Str;
 use Jetimob\NotaFacil\Facades\NotaFacil;
 use Jetimob\NotaFacil\NotaFacilServiceProvider;
 use Orchestra\Testbench\TestCase;

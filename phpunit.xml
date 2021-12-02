@@ -19,6 +19,6 @@
         <env name="DB_CONNECTION" value="testing" />
         <env name="NOTAFACIL_LOGIN" value="" />
         <env name="NOTAFACIL_PASSWORD" value="" />
-        <env name="OAUTH_CLIENT_SECRET" value="" />
+        <env name="NOTAFACIL_SECRET_KEY" value="" />
     </php>
 </phpunit>
