@@ -9,12 +9,12 @@
  */
 $endpoints = [
     'sandbox' => [
-        'base_uri' => 'https://api.notafacil.io/v1/',
-        'oauth_token_uri' => 'https://api.notafacil.io/v1/auth/login',
+        'base_uri' => 'https://staging.api.notafacil.io/v1/',
+        'oauth_token_uri' => 'https://staging.api.notafacil.io/v1/auth/login',
     ],
     'production' => [
-        'base_uri' => 'https://api.juno.com.br/',
-        'oauth_token_uri' => 'https://api.juno.com.br/authorization-server/oauth/token',
+        'base_uri' => 'https://api.notafacil.io/v1/',
+        'oauth_token_uri' => 'https://api.notafacil.io/v1/auth/login',
     ],
 ];
 return [
