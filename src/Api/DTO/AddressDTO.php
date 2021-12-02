@@ -1,6 +1,6 @@
 <?php
 
-namespace Jetimob\NotaFacil\Api\Business\DTO;
+namespace Jetimob\NotaFacil\Api\DTO;
 
 use Jetimob\NotaFacil\Api\DTO;
 

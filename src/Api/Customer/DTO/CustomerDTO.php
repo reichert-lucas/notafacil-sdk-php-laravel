@@ -2,7 +2,7 @@
 
 namespace Jetimob\NotaFacil\Api\Customer\DTO;
 
-use Jetimob\NotaFacil\Api\Business\DTO\AddressDTO;
+use Jetimob\NotaFacil\Api\DTO\AddressDTO;
 use Jetimob\NotaFacil\Api\DTO;
 
 class CustomerDTO extends DTO

@@ -3,6 +3,7 @@
 namespace Jetimob\NotaFacil\Api\Business\DTO;
 
 use Jetimob\NotaFacil\Api\DTO;
+use Jetimob\NotaFacil\Api\DTO\AddressDTO;
 
 class BusinessDTO extends DTO
 {

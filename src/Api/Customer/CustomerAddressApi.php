@@ -5,7 +5,7 @@ namespace Jetimob\NotaFacil\Api\Customer;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\RequestOptions;
 use Jetimob\NotaFacil\Api\AbstractApi;
-use Jetimob\NotaFacil\Api\Business\DTO\AddressDTO;
+use Jetimob\NotaFacil\Api\DTO\AddressDTO;
 
 /**
  * @link https://docs.notafacil.io/?version=latest#99aea9b8-e853-45b9-8a56-3a27e6b58d78
