@@ -8,6 +8,15 @@ class Customer
 {
     use Serializable;
 
+    /** tipo_cliente */
+    public const PF = 'PF';
+    public const PJ = 'PJ';
+
+    /** tipo_cadastro */
+    public const CUSTOMER = 'Cliente';
+    public const SUPPLIER = 'Fornecedor';
+    public const BOTH = 'Ambos';
+
     protected int $id;
     protected Address $endereco_principal;
     protected Phone $telefone_principal;
