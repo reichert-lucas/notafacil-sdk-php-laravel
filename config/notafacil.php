@@ -212,5 +212,6 @@ return [
         'clientAddress' => \Jetimob\NotaFacil\Api\Customer\CustomerAddressApi::class,
         'clientPhone' => \Jetimob\NotaFacil\Api\Customer\CustomerPhoneApi::class,
         'certificate' => \Jetimob\NotaFacil\Api\Certificate\CertificateApi::class,
+        'nfse' => \Jetimob\NotaFacil\Api\NFSe\NfseApi::class,
     ],
 ];
