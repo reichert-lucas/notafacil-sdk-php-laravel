@@ -6,6 +6,13 @@ use Jetimob\NotaFacil\Api\DTO;
 
 class NfsImpostoNfeDTO extends DTO
 {
+    public const COFINS = 'COFINS';
+    public const PIS = 'PIS';
+    public const CSLL = 'CSLL';
+    public const INSS = 'INSS';
+    public const ISS = 'ISS';
+    public const IR = 'IR';
+
     protected ?string $tipo = null;
     protected ?bool $reter = null;
     protected ?float $aliquota = null;
