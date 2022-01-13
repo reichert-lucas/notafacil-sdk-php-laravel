@@ -3,10 +3,11 @@
 namespace Jetimob\NotaFacil\Api\NFSe\DTO;
 
 use Jetimob\NotaFacil\Api\DTO;
+use Jetimob\NotaFacil\Entity\Customer;
 
 class NfseDTO extends DTO
 {
-    protected ?int $cliente = null;
+    protected ?Customer $cliente = null;
     protected ?NfsTotalNfeDTO $nfs_total = null;
     protected ?int $id_servico_params = null;
     protected ?int $id_cidade = null;
@@ -36,19 +37,19 @@ class NfseDTO extends DTO
     protected ?int $tipo_local_prestacao_servico = null;
 
     /**
-     * @return int|null
+     * @return Customer|null
      */
-    public function getCliente(): ?int
+    public function getCliente(): ?Customer
     {
         return $this->cliente;
     }
 
     /**
-     * @param int|null $cliente Pode ser passado um objeto do cliente para cadastro/atualizar ou o id de referência do cliente
+     * @param Customer|null $cliente Pode ser passado um objeto do cliente para cadastro/atualizar ou o id de referência do cliente
      *
      * @return NfseDTO
      */
-    public function setCliente(?int $cliente): NfseDTO
+    public function setCliente(?Customer $cliente): NfseDTO
     {
         $this->cliente = $cliente;
         return $this;
@@ -561,7 +562,7 @@ class NfseDTO extends DTO
     }
 
     public static function new(
-        int $clientId,
+        Customer $clientId,
         NfsTotalNfeDTO $nfsTotalNfe,
         string $descricaoServico,
         int $tipoLocalPrestacaoServico,
