@@ -19,7 +19,7 @@ class UserApiTest extends AbstractTestCase
         $this->api = NotaFacil::user();
     }
 
-    public function testList(): void
+    public function testList(): int
     {
         $response = $this->api->list();
         $users = $response->getUsers();
@@ -40,6 +40,10 @@ class UserApiTest extends AbstractTestCase
             $permission = $permissions[0];
             $this->assertInstanceOf(Permission::class, $permission);
         }
+
+        $firstUserIdFound = $users[0]->getId();
+
+        return $firstUserIdFound;
     }
 
     public function testAuthenticated(): void
@@ -49,10 +53,13 @@ class UserApiTest extends AbstractTestCase
         $this->assertNotEmpty($response->getUser());
     }
 
-    public function testFind(): void
+    /**
+     * @depends testList
+     */
+    public function testFind(int $userId): void
     {
-        $response = $this->api->find(18);
+        $response = $this->api->find($userId);
         $this->assertSame(200, $response->getStatusCode());
-        $this->assertSame(18, $response->getUser()->getId());
+        $this->assertSame($userId, $response->getUser()->getId());
     }
 }
