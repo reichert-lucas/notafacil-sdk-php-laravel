@@ -39,9 +39,9 @@ class City
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getDdd(): string|null
+    public function getDdd(): ?string
     {
         return $this->ddd;
     }
