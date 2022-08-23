@@ -11,7 +11,7 @@ class City
     protected int $id;
     protected string $nome;
     protected string $codigo_ibge;
-    protected string $ddd;
+    protected ?string $ddd;
     protected State $estado;
 
     /**
@@ -39,9 +39,9 @@ class City
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getDdd(): string
+    public function getDdd(): ?string
     {
         return $this->ddd;
     }
